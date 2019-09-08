@@ -1,0 +1,72 @@
+[
+    {"goodsid":1,
+        "url":["img/date11.jpg","img/date12.jpg","img/date13.jpg","img/date14.jpg"],
+        "tip":"家庭聚会套餐阳澄湖大闸蟹公3.6-3.4两3只,母2.6-2.4两3只,共6只",
+        "price1":255,
+        "price2":388,
+        "name":"商品1"
+    },
+    {"goodsid":2,
+        "url":["img/date21.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹母蟹2.8-2.3两8只",
+        "price1":310,
+        "price2":599,
+        "name":"商品2"
+    },
+    {"goodsid":3,
+        "url":["img/good3.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"公司热销中推荐阳澄湖大闸蟹公蟹3.9-3.2两8只大闸蟹",
+        "price1":345,
+        "price2":688,
+        "name":"商品3"
+    },
+    {"goodsid":4,
+        "url":["img/good4.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹母蟹（1.8-2.3两）8只装",
+        "price1":295,
+        "price2":499,
+        "name":"商品4"
+    },
+    {"goodsid":5,
+        "url":["img/good5.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹 4.5两公,3.5两母, 共8只顺丰包邮",
+        "price1":498,
+        "price2":888,
+        "name":"商品5"
+    },
+    {"goodsid":6,
+        "url":["img/good6.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹公蟹3.0-3.3三只 母蟹2.0-2.2三只 顺丰包邮",
+        "price1":285,
+        "price2":499,
+        "name":"商品6"
+    },
+    {"goodsid":7,
+        "url":["img/good7.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹公3.5-3.7两，母2.5-2.7母8只顺丰包邮",
+        "price1":328,
+        "price2":599,
+        "name":"商品7"
+    },
+    {"goodsid":8,
+        "url":["img/good8.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖大闸蟹 实惠装公蟹3.7-3.3两5只 母蟹2.8-2.3两5只",
+        "price1":388,
+        "price2":599,
+        "name":"商品8"
+    },
+    {"goodsid":9,
+        "url":["img/good9.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"阳澄湖六月黄大闸蟹共12只鲜活螃蟹 2.1-2.6两",
+        "price1":380,
+        "price2":897,
+        "name":"商品9"
+    },
+    {"goodsid":10,
+        "url":["img/good10.jpg","img/date22.jpg","img/date23.jpg"],
+        "tip":"现货送4只大闸蟹鲜活阳澄湖公4.0两 全母螃蟹3.0共10只",
+        "price1":398,
+        "price2":645,
+        "name":"商品10"
+    }
+]
