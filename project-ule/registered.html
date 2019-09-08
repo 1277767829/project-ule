@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/registered.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,11 +39,8 @@
                 </div>
             </div>
         </div>
-        <div class="head-m">
-            <img src="img/order.jpg" alt="">
-        </div>
-        <div class="head-b margin">
-            <a class="logo" href=""><img src="img/logo.gif" alt=""></a>
+        <div class="head-b">
+            <a class="logo margin" href=""><img src="img/logo.gif" alt=""></a>
             <div class="seach">
                 <div class="sou">
                     <input type="text" class="txt" placeholder="邮政919，疯狂一整夏 疯抢一亿购物津贴">
@@ -70,31 +67,41 @@
             </div>
         </div>
     </header>
-    <banner>
-        <img src="img/deta.png" alt="">
-    </banner>
     <main>
-        <div class="margin">
-            <div class="details">
-                <div class="left">
-                    <div id="smallimg" class="smallimg">
-                        <div id="move" class="move"></div>
-                        <div id="bigimg" class="bigimg"></div>
-                    </div>
-                    <ul id="wrap">
-                        <!-- <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li> -->
-                    </ul>
+        <div class="register">
+            <div class="title">
+                <p>新用户注册</p>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td><s>手机号码</s></td>
+                        <td><input id="user" type="text" placeholder="请输入您的手机号"></td>
+                        <td><span id="userspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><s>验证码</s></td>
+                        <td><div class="count"><input id="verify" type="text" placeholder="请输入计算结果"><div id="cover" class="cover"></div></div><div id="random" class="random"><b id="num1"></b><i id="operator"></i><b id="num2"></b></div></td>
+                        <td><span id="verifyspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><s>设置密码</s></td>
+                        <td><input id="pass1" type="password" placeholder="请设置6-20位字符的密码"></td>
+                        <td><span id="pass1span"></span></td>
+                    </tr>
+                    <tr>
+                        <td><s>确认密码</s></td>
+                        <td><input id="pass2" type="password" placeholder="请再次输入密码"></td>
+                        <td><span id="pass2span"></span></td>
+                    </tr>
+                </table>
+                <div class="xieyi">
+                    <label><input id="checkbox" type="checkbox"></label><i>我接受 </i><a href="">《邮乐用户协议》</a><a href="">《隐私权政策》</a><i> 及其相关的条款和条件</i><span id="checkboxspan"></span>
                 </div>
-                <div id="right" class="right">
-                    <!-- <h3>家庭聚会套餐阳澄湖大闸蟹公3.6-3.4两3只,母2.6-2.4两3只,共6只</h3>
-                    <p><span>特卖价</span><i>￥255</i><b>388.00</b></p>
-                    <div class="num"><span>数量</span><input type="number" value="1"></div>
-                    <div class="add"><a href="">立即抢购</a><a href="">加入购物车</a></div> -->
-                    
+                <div class="sub">
+                    <a href="javescript:;" id="sub">立即注册</a><span id="subspan"></span>
                 </div>
+                
             </div>
         </div>
     </main>
@@ -173,11 +180,8 @@
         </div>
     </footer>
 </body>
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/details-render.js"></script>
-<script src="js/amplification.js"></script>
+<script src="js/Form.js"></script>
 <script>
-    new Render();
-    new Amplification();
+new Form();
 </script>
 </html>

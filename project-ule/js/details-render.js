@@ -1,5 +1,6 @@
 ;(function(){
     var Render=window.Render=function(){
+        this.idx=0;
         this.id=location.search.slice(1);
         this.url="http://localhost/project-ule/json/details.json";
         var that=this;
@@ -34,6 +35,9 @@
             }
         }
         $(str1).appendTo($("#right"));
-        $(str2).appendTo($("#wrap"))
+        $(str2).appendTo($("#wrap"));
+        this.imgurl=$("#wrap").find(".xiao").eq(this.idx).attr("src");
+        $("#smallimg").css("background-image",`url(${this.imgurl})`);
+        $("#bigimg").css("background-image",`url(${this.imgurl})`)
     }
 })();
