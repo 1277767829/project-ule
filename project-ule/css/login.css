@@ -2,8 +2,8 @@
 header{position: relative;}
 header .head-t{height:29px;background:#f7f7f7;padding-top:6px;border-bottom:1px solid #ededed;}
 header .head-t .head-t-l{float:left;}
-header .head-t .head-t-l span{margin:0 5px;font:12px/22px "";color:#666;}
-header .head-t .head-t-l a{display:inline-block;margin-left:5px;background:#fff url(../img/xiajian.png) no-repeat 55px 7px;font:12px/22px "";color:#666;border:1px solid #666;padding-left:12px;width:60px;}
+header .head-t .head-t-l .souye{margin:0 5px;font:12px/22px "";color:#666;}
+header .head-t .head-t-l .dizhi{display:inline-block;margin-left:5px;background:#fff url(../img/xiajian.png) no-repeat 55px 7px;font:12px/22px "";color:#666;border:1px solid #666;padding-left:12px;width:60px;}
 header .head-t .head-t-r{float:right;}
 header .head-t .head-t-r a{display:inline-block;font:12px/22px "";color:#666;}
 header .head-t .head-t-r a.te{color:#06c;}
@@ -22,24 +22,19 @@ header .head-b .car{margin-top:20px;height:34px;width:158px;border:1px solid #66
 header .head-b .car span{display:inline-block;font:12px/34px "";color:#666;cursor: pointer;}
 header .head-b .car i{color:#c7181d;font:16px/34px "";display: inline-block;text-align: center;width:58px;}
 main .margin{height:495px;position: relative;}
-main .margin .login-box{width: 332px;background-color: #FFF;border-radius: 3px;top: 5px;box-shadow: #999 0px 0px 2px;height: 485px;right:150px;position: absolute;border: 1px solid #FFF;}
+main .margin .login-box{width: 332px;border-radius: 3px;top: 5px;box-shadow: #999 0px 0px 2px;height: 485px;right:150px;position: absolute;border: 1px solid #FFF;background:#fff url(../img/weibo.png) no-repeat center bottom;}
 main .margin .login-box h3{font-size: 16px;font-weight: bold;color: #333;margin: 18px 0 26px 15px;}
-main .margin .login-box .user{}
-main .margin .login-box .user input{width: 277px;height: 18px;line-height: 18px;padding: 10px 0 10px 23px;border: 1px solid #cacaca;font-size: 14px;margin: 0 0 0 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+main .margin .login-box .user input{width: 277px;height: 18px;line-height: 18px;padding: 10px 0 10px 23px;border: 1px solid #cacaca;font-size: 14px;margin: 0 0 0 15px;background:url(../img/user.png) no-repeat 5px 10px;}
+main .margin .login-box .user span{display:block;padding: 3px 0 10px 23px;color:red;height:12px;}
+main .margin .login-box .pass span{display:block;padding: 3px 0 10px 23px;color:red;height:12px;}
+main .margin .login-box .pass input{width: 277px;height: 18px;line-height: 18px;padding: 10px 0 10px 23px;border: 1px solid #cacaca;font-size: 14px;margin: 0 0 0 15px;background:url(../img/pass.png) no-repeat 5px 10px;}
+main .margin .login-box .checkbox{padding: 0 0 10px 12px;}
+main .margin .login-box .checkbox i{cursor: pointer;}
+main .margin .login-box .checkbox input{margin-right:5px;cursor: pointer;}
+main .margin .login-box .sub{padding:0 23px;margin-top:20px;}
+main .margin .login-box .sub b{display:block;color: #fff;border: 1px solid #a71427;background-color: #d10208;height: 38px;line-height: 36px;text-align: center;border-radius: 3px;font-size: 16px;cursor: pointer;}
+main .margin .login-box .sub span{display:block;padding: 3px 0 10px 0px;color:red;height:12px;}
+main .margin .login-box .tiaozhuan{text-align: center;font:26px/1 "";color:#0f0;display:none;}
 
 footer{background:#fff;position: relative;}
 footer .footer-t{padding-top:50px;text-align: center;}

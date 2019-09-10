@@ -14,13 +14,13 @@
             <div class="margin">
                 <div class="head-t-l">
                     <img src="img/house.png" alt="">
-                    <span>邮乐首页</span>
-                    <a href="">上海</a>
+                    <a class="souye" href="http://localhost/project-ule/index.html">邮乐首页</a>
+                    <a class="dizhi" href="">上海</a>
                 </div>
                 <div class="head-t-r">
                     <a href="">您好，欢迎来到邮乐网！</a>
-                    <a class="te" href="">[请登录]</a>
-                    <a class="te" href="">[免费注册]</a>
+                    <a id="indexUser" class="te" href="http://localhost/project-ule/login.html"></a>
+                    <a id="indexRegister" class="te" href="http://localhost/project-ule/registered.html"></a>
                     <span>|</span>
                     <a href="">我的邮乐<img src="img/xiajian.png" alt=""></a>
                     <span>|</span>
@@ -62,10 +62,9 @@
                 </div>
             </div>
             <div class="car">
-                <img src="img/car.png" alt="">
-                <span>购物车</span>
+                <a href="http://localhost/project-ule/car.html"> <img src="img/car.png" alt=""><span>购物车</span></a>
                 <span>|</span>
-                <i>0</i>
+                <i id="carNumber"></i>
                 <img src="img/xiajian.png" alt="">
             </div>
         </div>
@@ -130,9 +129,9 @@
             </div>
         </div>
         <div class="middle margin">
-            <a href=""><img src="img/1.jpg" alt=""></a>
-            <a href=""><img src="img/2.jpg" alt=""></a>
-            <a href=""><img src="img/3.jpg" alt=""></a>
+            <a target=“_blank” href="http://localhost/project-ule/goods.html"><img src="img/1.jpg" alt=""></a>
+            <a target=“_blank” href="http://localhost/project-ule/goods.html"><img src="img/2.jpg" alt=""></a>
+            <a target=“_blank” href="http://localhost/project-ule/goods.html"><img src="img/3.jpg" alt=""></a>
         </div>
     </section>
     <main>
@@ -323,10 +322,15 @@
 <script src="js/list.js"></script>
 <script src="js/Tab.js"></script>
 <script src="js/Lou.js"></script>
+<script src="js/IndexLogin.js"></script>
+<script src="js/CarNunmber.js"></script>
 <script>
 new List();
 new Breath();
 new Tab();
 new Lou();
+new CarNumber();
+new IndexLogin();
+
 </script>
 </html>

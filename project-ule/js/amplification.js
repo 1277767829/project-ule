@@ -6,7 +6,6 @@
     }
     Amplification.prototype.bindEvent=function(){
         var that=this;
-        console.log($("#move").width()/2)
         $("#wrap").on("click",".xiao",function(event){
             that.url=$(event.target).attr("src");
             $("#smallimg").css("background-image",`url(${that.url})`);
@@ -31,7 +30,6 @@
             $("#bigimg").css({"backgroundPosition":x+"px "+y+"px","display":"block"});
         })
         $("#smallimg").mouseleave(function(event){
-            console.log(2);
             $("#move").css("display","none");
             $("#bigimg").css("display","none");
         })

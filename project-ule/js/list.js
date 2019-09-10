@@ -39,8 +39,8 @@
             }
             this.strdd+=` <dd class="dd">
                         <div class="title">
-                            <span class="cur">分类</span>
-                            <span>品牌</span>
+                            <span class="cur title-t">分类</span>
+                            <span class="title-t">品牌</span>
                         </div>
                         <div class="content">
                             <div class="fenlei clear">
@@ -61,23 +61,21 @@
     List.prototype.bindEvent=function(){
         this.$dd=$("#list").children("dd");
         var that=this;
-        // console.log(this.$dd)
-       
-        this.$list.on("mouseover",this.$dt,function(event){
-            console.log($(event.target),4)
-            if($(event.target).index()<that.$dd.length){
+        this.$dt.on("mouseover",function(event){
+            // console.log($(this),1)
+            if($(this).index()<that.$dd.length){
                 that.$dd.css("display","none")
-                that.$dd.eq($(event.target).index()).css({"display":"block"});
+                that.$dd.eq($(this).index()).css({"display":"block"});
             }else{
                 that.$dd.css("display","none")
             }
-            return false;
         })
-        // this.$list.on("mouseenter",".dd",function(){
-        //     $(event.target).css({"display":"block","background":"red"});
-        //     console.log($(event.target))
-        // })
-        this.$list.on("mouseout",function(){
+        this.$list.on("mouseover",".title-t",function(event){
+            console.log($(event.target).index(),1)
+            $(this).addClass("cur").siblings().removeClass("cur");
+            $(this).parent().siblings().children().eq($(this).index()).css("display","block").siblings().css("display","none");
+        })
+        this.$list.on("mouseleave",function(){
             that.$dd.css("display","none")
         })
       

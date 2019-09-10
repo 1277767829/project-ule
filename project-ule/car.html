@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/car.css">
     <title>Document</title>
 </head>
 <body>
@@ -69,15 +69,50 @@
     </header>
     <main>
         <div class="margin">
-            <img src="img/login.jpg" alt="">
-            <div class="login-box">
-                <h3>登录</h3>
-                <div class="user"><input id="user" type="text" placeholder="邮箱地址或手机号码"><span id="userspan"></span></div>
-                <div class="pass"><input id="pass" type="password" placeholder="密码"><span id="passspan"></span></div>
-                <div class="checkbox"><input id="checkbox" type="checkbox" id="checkbox"><label for="checkbox"><i>这台电脑30天免登录</i></label></div>
-                <div class="sub"><b id="sub">立即登录</b><span id="subspan"></span></div>
-                <div id="tiaozhuan" class="tiaozhuan">正在跳转首页<span id="tiaozhuanspan"></span></div>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="lie1"><label class="shou" for="quanxuan">全选</label><input type="checkbox" id="quanxuan"></th>
+                        <th class="lie2">商品照片</th>
+                        <th class="lie3">商品信息</th>
+                        <th class="lie4">单价</th>
+                        <th class="lie5">商品数量</th>
+                        <th class="lie6">价格合计</th>
+                        <th class="lie7">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="lie1"><input class="checkbox" type="checkbox" id="checkbox"></td>
+                        <td class="lie2"><img src="img/date22.jpg" alt=""></td>
+                        <td class="lie3"><span>家庭聚会套餐阳澄湖大闸蟹公3.6-3.4两3只,母2.6-2.4两3只,共6只</span></td>
+                        <td class="lie4"><b>￥123</b></td>
+                        <td class="lie5"><input type="number" value="23" min='1'></td>
+                        <td class="lie6"><b>￥123</b></td>
+                        <td class="lie7"><i>删除</i> </td>
+                    </tr>
+                    <tr>
+                        <td class="lie1"><input class="checkbox" type="checkbox" id="checkbox"></td>
+                        <td class="lie2"><img src="img/date22.jpg" alt=""></td>
+                        <td class="lie3"><span>家庭聚会套餐阳澄湖大闸蟹公3.6-3.4两3只,母2.6-2.4两3只,共6只</span></td>
+                        <td class="lie4"><b>￥123</b></td>
+                        <td class="lie5"><input type="number" value="23" min='1'></td>
+                        <td class="lie6"><b>￥123</b></td>
+                        <td class="lie7"><i>删除</i> </td>
+                    </tr> -->
+                </tbody>
+                <tfoot>
+                       <tr>
+                            <!-- <td class="lie1">总计：</td>
+                            <td class="lie2"></td>
+                            <td class="lie3"><s>商品总数量</s></td>
+                            <td class="lie4"><i>22</i></td>
+                            <td class="lie5">总价格</td>
+                            <td class="lie6">￥<b>123</b></td>
+                            <td class="lie7"><a href="javescript:;">结算</a> </td> -->
+                       </tr>
+                </tfoot>
+            </table>
         </div>
     </main>
     <footer>
@@ -155,11 +190,15 @@
         </div>
     </footer>
 </body>
-<script src="js/cookie.js"></script>
-<script src="js/Login.js"></script>
-<script src="js/TitleLogin.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/Car.js"></script>
+<script src="js/CarLogin.js"></script>
+
+
 <script>
+new Car();
 new IndexLogin();
-new Login();
+
+
 </script>
 </html>

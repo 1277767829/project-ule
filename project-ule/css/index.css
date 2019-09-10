@@ -4,8 +4,8 @@
 header{position: relative;}
 header .head-t{height:29px;background:#f7f7f7;padding-top:6px;border-bottom:1px solid #ededed;}
 header .head-t .head-t-l{float:left;}
-header .head-t .head-t-l span{margin:0 5px;font:12px/22px "";color:#666;}
-header .head-t .head-t-l a{display:inline-block;margin-left:5px;background:#fff url(../img/xiajian.png) no-repeat 55px 7px;font:12px/22px "";color:#666;border:1px solid #666;padding-left:12px;width:60px;}
+header .head-t .head-t-l .souye{margin:0 5px;font:12px/22px "";color:#666;}
+header .head-t .head-t-l .dizhi{display:inline-block;margin-left:5px;background:#fff url(../img/xiajian.png) no-repeat 55px 7px;font:12px/22px "";color:#666;border:1px solid #666;padding-left:12px;width:60px;}
 header .head-t .head-t-r{float:right;}
 header .head-t .head-t-r a{display:inline-block;font:12px/22px "";color:#666;}
 header .head-t .head-t-r a.te{color:#06c;}
@@ -21,7 +21,7 @@ header .head-b .seach .jingzhun{margin-top:5px;}
 header .head-b .seach .jingzhun a{display:inline-block;font:12px/1 "";color:#666; margin-left:3px;}
 header .head-b .seach .jingzhun a.te{color:#c51010;}
 header .head-b .car{margin-top:20px;height:34px;width:158px;border:1px solid #666;padding:0 5px;}
-header .head-b .car span{display:inline-block;font:12px/34px "";color:#666;cursor: pointer;}
+header .head-b .car span{display:inline-block;font:12px/34px "";color:#666;cursor: pointer;margin-left:6px;}
 header .head-b .car i{color:#c7181d;font:16px/34px "";display: inline-block;text-align: center;width:58px;}
 
 nav{background:#a71b1b;border-top:1px solid #7a090b;height:39px;position: relative;}

@@ -14,13 +14,13 @@
             <div class="margin">
                 <div class="head-t-l">
                     <img src="img/house.png" alt="">
-                    <span>邮乐首页</span>
-                    <a href="">上海</a>
+                    <a class="souye" href="http://localhost/project-ule/index.html">邮乐首页</a>
+                    <a class="dizhi" href="">上海</a>
                 </div>
                 <div class="head-t-r">
                     <a href="">您好，欢迎来到邮乐网！</a>
-                    <a class="te" href="">[请登录]</a>
-                    <a class="te" href="">[免费注册]</a>
+                    <a id="indexUser" class="te" href="http://localhost/project-ule/login.html"></a>
+                    <a id="indexRegister" class="te" href="http://localhost/project-ule/registered.html"></a>
                     <span>|</span>
                     <a href="">我的邮乐<img src="img/xiajian.png" alt=""></a>
                     <span>|</span>
@@ -180,8 +180,11 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery-1.12.3.min.js"></script>
 <script src="js/Form.js"></script>
+<script src="js/RegisterLogin.js"></script>
 <script>
+new IndexLogin();
 new Form();
 </script>
 </html>

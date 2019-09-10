@@ -27,6 +27,22 @@
         this.road();
         this.bindEvent();
     }
+    Form.prototype.init=function(){
+        this.a=0;
+        this.b=0;
+        this.c=0;
+        this.d=0;
+        this.e=0;
+        this.user.value="";
+        this.userspan.innerHTML="";
+        this.cover.style.display="block";
+        this.verify.value="";
+        this.verifyspan.innerHTML="";
+        this.pass1.value="";
+        this.pass1span.innerHTML="";
+        this.pass2.value="";
+        this.pass2span.innerHTML="";
+    }
     Form.prototype.render=function(){
         var operatorarr=["+","-","*"];
         this.num1.innerHTML=parseInt(Math.random()*10);
@@ -139,9 +155,9 @@
             if(that.a+that.b+that.c+that.e+that.d==5){
                 that.subspan.innerHTML="恭喜你注册成功";
                 that.subspan.style.color="green";
-                that.verify.value="";
-                that.registerarr.push({"user":that.user.value,"pass":that.pass1.value})
+                that.registerarr.push({"user":that.user.value,"pass":that.pass1.value,"goods":[],"isLogin":false})
                 localStorage.setItem("register",JSON.stringify(that.registerarr));
+                that.init();
                 that.render();
             }else{
                 that.subspan.innerHTML="请先完成上述步骤";

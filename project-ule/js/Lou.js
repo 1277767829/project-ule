@@ -5,7 +5,6 @@
         this.l3=$("#lou").find("li").eq(2);
         this.l4=$("#lou").find("li").eq(3);
         this.height1=$("#shejian").offset().top;
-        console.log(this.l1)
         this.height2=$("#jiaju").offset().top;
         this.height3=$("#zhineng").offset().top;
         this.height4=0;
