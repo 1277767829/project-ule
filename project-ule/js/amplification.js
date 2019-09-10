@@ -1,9 +1,12 @@
 ;(function(){
+    // 实现放大镜功能，里面的图片可以根据用户选择的下方图片来显示
     var Amplification=window.Amplification=function(){
+        // 放大镜中的图片放大比例
         this.rate=$("#move").height()/$("#bigimg").height();
         this.bindEvent();
        
     }
+    // 给下方的图片绑定点击事件，选择需要显示的图片
     Amplification.prototype.bindEvent=function(){
         var that=this;
         $("#wrap").on("click",".xiao",function(event){
