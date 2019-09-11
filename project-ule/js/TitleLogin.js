@@ -1,4 +1,4 @@
-;(function(){
+define(function(){
     var IndexLogin=window.IndexLogin=function(){
         this.indexUser=document.getElementById("indexUser");
         this.indexRegister=document.getElementById("indexRegister");
@@ -61,4 +61,4 @@
         }
         this.init();
     }
-})();
+});
