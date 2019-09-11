@@ -28,7 +28,8 @@ main table thead th{display:inline-block;text-align: center;font:12px/3 "";color
 main table thead th input{vertical-align :middle;cursor: pointer;}
 main table tbody tr{margin-top:20px;background:#f3f3f3;display:block;width:950px;height:150px;padding:0 10px;}
 main table tbody td{display:inline-block;font:12px/150px "";color:#666;height:150px;}
-main table tbody td span{display:inline-block;width:200px;font:12px/24px "";}
+main table tbody td a{display:inline-block;width:200px;font:12px/24px "";}
+main table tbody td a:hover{color:red;}
 main table tbody td img{width:180px;height:100px;}
 main table tbody td input{width:50px;border:1px solid #888;}
 main table tbody td .checkbox{width:20px;height:20px;}

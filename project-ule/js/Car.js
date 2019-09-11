@@ -37,7 +37,7 @@
                             str+=`<tr id=${this.goodsarr[k]["id"]}>
                             <td class="lie1"><input class="checkbox" type="checkbox" ${this.checkedState}></td>
                             <td class="lie2"><img src=${this.json[j]["url"]} alt=""></td>
-                            <td class="lie3"><span>${this.json[j]["tip"]}</span></td>
+                            <td class="lie3"><a href="http://localhost/project-ule/details.html?${this.goodsarr[k]["id"]}">${this.json[j]["tip"]}</a></td>
                             <td class="lie4">￥<b>${this.json[j]["price1"]}</b></td>
                             <td class="lie5"><input class="number" type="number" value=${this.goodsarr[k]["num"]} min='1'></td>
                             <td class="lie6">￥<b>${this.json[j]["price1"]*this.goodsarr[k]["num"]}</b></td>
