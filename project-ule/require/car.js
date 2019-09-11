@@ -10,7 +10,7 @@ require.config({
 })
 
 
-require(["a","b","c"],function(a,b){
-    new Car();
-    new IndexLogin();
+require(["a","b","c"],function(_,b,c){
+    new b.car();
+    new c.indexLogin();
 })

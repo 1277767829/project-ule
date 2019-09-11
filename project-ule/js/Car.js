@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 购物车实现的功能有：根据当前登录的用户来加载此用户的购物车信息
-    var Car=window.Car=function(){
+    var Car=function(){
         // 请求后台数据的地址
         this.url="http://localhost/project-ule/json/goods.json";
         var that=this;
@@ -184,4 +184,7 @@
             }
         })
     }
-})();
+    return {
+        "car":Car
+    }
+});

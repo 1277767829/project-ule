@@ -1,5 +1,5 @@
 define(function(){
-    var IndexLogin=window.IndexLogin=function(){
+    var IndexLogin=function(){
         this.indexUser=document.getElementById("indexUser");
         this.indexRegister=document.getElementById("indexRegister");
         this.init();
@@ -60,5 +60,8 @@ define(function(){
             }
         }
         this.init();
+    }
+    return {
+        "titleLogin":IndexLogin
     }
 });

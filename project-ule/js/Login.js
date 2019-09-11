@@ -1,6 +1,6 @@
 define(function(){
     // 登录页面登录表格的功能：当用户输入正确的已注册的信息后，修改数据库中已注册的这条用户的登录状态并且3秒后跳转至首页（其实可以跳转至之前打开这个页面的网页，但是又有可能是从注册页面跳转过来的这时候就不需要跳转回去了）
-    var Login=window.Login=function(){
+    var Login=function(){
         // 获取一系列节点
         this.user=document.getElementById("user");
         this.userspan=document.getElementById("userspan");
@@ -24,8 +24,8 @@ define(function(){
     // 初始页面登录表的内容
     Login.prototype.init=function(){
         // 先判定本地cookie中是否有login的值
-        if(getcookie("login").length>1){
-            this.cookieObj=JSON.parse(getcookie("login"))||{};
+        if(this.getcookie("login")){
+            this.cookieObj=JSON.parse(this.getcookie("login"))||{};
         }
         // 如果有值那就直接填充内容，把信号量改为1
         if(this.cookieObj){
@@ -89,9 +89,9 @@ define(function(){
                             localStorage.setItem("register",JSON.stringify(that.registerarr));
                             // 根据是否记住账号密码前复选框的状态来决定这条cookie的保存时间
                             if(that.checkbox.checked){
-                                setcookie("login",JSON.stringify(that.loginobj),{expires:30})
+                                that.setcookie("login",JSON.stringify(that.loginobj),{expires:30})
                             }else{
-                                setcookie("login",JSON.stringify(that.loginobj))
+                                that.setcookie("login",JSON.stringify(that.loginobj))
                             }
                             // 登录成功之后，3秒后跳转到首页
                             setTimeout(function(){
@@ -126,6 +126,27 @@ define(function(){
             }
             that.tiaozhuanspan.innerHTML=that.tiaozhuanspanArr[that.idx]
         },300)
-        
+    }
+    Login.prototype.setcookie=function(key,value,options){
+        options=options ||{};
+        var expires="";
+        var d=new Date();
+        d.setDate(d.getDate()+options.expires);
+        expires=";expires="+d;
+        var path=options.path ? ";path="+options.path : "";
+        document.cookie=`${key}=${value}${expires}${path};`
+    }
+    Login.prototype.getcookie=function(key){
+        var arr=document.cookie.split("; ");
+        for(var i=0;i<arr.length;i++){
+            if(key==arr[i].split("=")[0]){
+                return arr[i].split("=")[1];
+                
+            }
+        }
+        return '';
+    }
+    return {
+        "login":Login
     }
 });

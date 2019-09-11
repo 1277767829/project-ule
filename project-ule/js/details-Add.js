@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 根据请求的网址后缀来加载页面的商品信息，同时点击添加购物车功能时修改数据库中的goods商品信息
-    var Add=window.Add=function(){
+    var Add=function(){
         // 这个idx表示当前大框显示的照片的下标
         this.idx=0;
         // 截取网址后缀
@@ -90,4 +90,7 @@
             location.href = 'http://localhost/project-ule/login.html';
         })
     }
-})();
+    return {
+        "add":Add
+    }
+});

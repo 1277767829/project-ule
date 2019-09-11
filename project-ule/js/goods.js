@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 动态加载页面商品信息
-    var Goods=window.Goods=function(){
+    var Goods=function(){
         // 请求后台的数据地址
         this.url="http://localhost/project-ule/json/goods.json";
         var that=this;
@@ -41,4 +41,7 @@
         }
         $(str).appendTo($("#good"));
     }
-})();
+    return {
+        "goods":Goods
+    }
+});

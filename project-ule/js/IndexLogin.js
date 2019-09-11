@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 这里主要是根据lockstorage来控制页面顶部请登录和免费注册这两个按钮
-    var IndexLogin=window.IndexLogin=function(){
+    var IndexLogin=function(){
         // 获取节点
         this.indexUser=document.getElementById("indexUser");
         this.indexRegister=document.getElementById("indexRegister");
@@ -85,5 +85,7 @@
             }
         }
     }
-    
-})();
+    return {
+        "indexLogin":IndexLogin
+    }
+});

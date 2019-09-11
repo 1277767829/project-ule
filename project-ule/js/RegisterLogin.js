@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 这个就是注册页面上方的登录注册按钮，功能与首页的一致
-    var IndexLogin=window.IndexLogin=function(){
+    var IndexLogin=function(){
         this.indexUser=document.getElementById("indexUser");
         this.indexRegister=document.getElementById("indexRegister");
         this.init();
@@ -61,4 +61,7 @@
         }
         this.init();
     }
-})();
+    return {
+        "registerLogin":IndexLogin
+    }
+});

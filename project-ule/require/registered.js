@@ -10,7 +10,7 @@ require.config({
 })
 
 
-require(["a","b","c"],function(a,b){
-    new IndexLogin();
-    new Form();
+require(["a","b","c"],function(_,b,c){
+    new b.form();
+    new c.registerLogin();
 })

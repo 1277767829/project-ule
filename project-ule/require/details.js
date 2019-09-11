@@ -12,9 +12,9 @@ require.config({
 })
 
 
-require(["a","b","c","d","e"],function(a,b){
-    new Add();
-    new Amplification();
-    new IndexLogin();
-    new CarNumber();
+require(["a","b","c","d","e"],function(_,b,c,d,e){
+    new b.add();
+    new c.amplification();
+    new d.indexLogin();
+    new e.carNumber();
 })

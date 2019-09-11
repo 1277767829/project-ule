@@ -1,5 +1,5 @@
-;(function(){
-    var Tab=window.Tab=function(){
+define(function(){
+    var Tab=function(){
         this.$a=$("#dijia").children(".dijia-t").children("a");
         this.$li=$("#dijia").children(".dijia-b").children("ul").children("li");
         this.idx=0;
@@ -21,4 +21,7 @@
             }
         })
     }
-})();
+    return {
+        "tab":Tab
+    }
+});

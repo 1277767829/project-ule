@@ -4,21 +4,21 @@ require.config({
     //以baseUrl指定的目录作为起始点
     paths:{
         "a":"jquery-1.12.3.min",
-        "d":"breath",
-        "e":"list",
         "b":"Tab",
         "c":"Lou",
+        "d":"breath",
+        "e":"list",
         "f":"IndexLogin",
         "g":"CarNunmber"
     }
 })
 
 
-require(["a","b","c","d","e","f","g"],function(){
-    new List();
-    new Breath();
-    new Tab();
-    new Lou();
-    new CarNumber();
-    new IndexLogin();
+require(["a","b","c","d","e","f","g"],function(_,b,c,d,e,f,g){
+    new b.tab();
+    new c.lou();
+    new d.breath();
+    new e.list();
+    new f.indexLogin();
+    new g.carNumber();
 })

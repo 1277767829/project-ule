@@ -11,8 +11,8 @@ require.config({
 })
 
 
-require(["a","b","c","d"],function(){
-    new Goods();
-    new IndexLogin();
-    new CarNumber();
+require(["a","b","c","d"],function(_,b,c,d){
+    new b.goods();
+    new c.indexLogin();
+    new d.carNumber();
 })

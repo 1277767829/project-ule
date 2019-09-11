@@ -1,7 +1,7 @@
-;(function(){
+define(function(){
     "use strict"
     //三级菜单功能的实现
-    var List=window.List=function(){
+    var List=function(){
         // 获取节点以及请求数据的地址
         this.$list=$("#list");
         this.$dt=$("#list").children("dt");
@@ -89,6 +89,8 @@
         this.$list.on("mouseleave",function(){
             that.$dd.css("display","none")
         })
-      
     }
-})();
+    return {
+        "list":List
+    }
+});

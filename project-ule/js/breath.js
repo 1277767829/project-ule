@@ -1,5 +1,5 @@
-;(function(){
-    var Breath=window.Breath=function(){
+define(function(){
+    var Breath=function(){
         this.idx=0;
         this.$breath=$("#breath");
         this.$lis=$("#breath").children("ul").children("li");
@@ -48,7 +48,10 @@
             })
         },2800)
     }
-})();
+    return {
+        "breath":Breath
+    }
+});
 
 
 

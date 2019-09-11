@@ -1,5 +1,5 @@
-;(function(){
-    var IndexLogin=window.IndexLogin=function(){
+define(function(){
+    var IndexLogin=function(){
         this.indexUser=document.getElementById("indexUser");
         this.indexRegister=document.getElementById("indexRegister");
         this.tbody=document.getElementsByTagName("tbody")[0];
@@ -64,4 +64,7 @@
         }
         this.init();
     }
-})();
+    return {
+        "indexLogin":IndexLogin
+    }
+});

@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 给首页添加楼层定位效果
-    var Lou=window.Lou=function(){
+    var Lou=function(){
         // 获取一系列的节点和高度数据
         this.l1=$("#lou").find("li").eq(0);
         this.l2=$("#lou").find("li").eq(1);
@@ -50,4 +50,7 @@
             }
         })
     }
-})();
+    return {
+        "lou":Lou
+    }
+});

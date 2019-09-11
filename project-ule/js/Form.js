@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 表单验证：根据用户输入的信息来判断是否可以成功注册
-    var Form=window.Form=function(){
+    var Form=function(){
         // 获取一系列的节点
         this.user=document.getElementById("user");
         this.userspan=document.getElementById("userspan");
@@ -195,4 +195,7 @@
             }
         }
     }
-})();
+    return {
+        "form":Form
+    }
+});

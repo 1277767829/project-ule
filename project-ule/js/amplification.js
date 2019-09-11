@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 实现放大镜功能，里面的图片可以根据用户选择的下方图片来显示
-    var Amplification=window.Amplification=function(){
+    var Amplification=function(){
         // 放大镜中的图片放大比例
         this.rate=$("#move").height()/$("#bigimg").height();
         this.bindEvent();
@@ -36,5 +36,8 @@
             $("#move").css("display","none");
             $("#bigimg").css("display","none");
         })
+    }
+    return {
+        "amplification":Amplification
     }
 })();

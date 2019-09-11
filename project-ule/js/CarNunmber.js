@@ -1,6 +1,6 @@
-;(function(){
+define(function(){
     // 根据localstorge来渲染当前登陆用户的购物车数量
-    var CarNumber=window.CarNumber=function(){
+    var CarNumber=function(){
         this.road();
         this.render();
         this.bindEvent();
@@ -32,4 +32,7 @@
             that.render();
         })
     }
-})();
+    return {
+        "carNumber":CarNumber
+    }
+});
